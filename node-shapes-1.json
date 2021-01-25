@@ -1,0 +1,40 @@
+[
+  {
+    "id": "8004b8d1a2297463c2d16b6df8e6526e",
+    "uri": "http://www.factweave.com/mvm/shape#Test1",
+    "label": "Test One",
+    "created": "2021-01-25T20:02:18.019+0000",
+    "modified": "2021-01-25T20:02:18.019+0000",
+    "targetClass": "Test1",
+    "properties": [
+      {
+        "label": "Pick One",
+        "path": "pickOne",
+        "datatype": "xsd:string",
+        "constraints": [
+          {
+            "type": "minCount",
+            "value": 1,
+            "message": "This field is required"
+          },
+          {
+            "type": "maxCount",
+            "value": 1,
+            "message": "This field must not have more than 1 value"
+          },
+          {
+            "type": "in",
+            "value": [
+              "One",
+              "Two",
+              "Three"
+            ],
+            "message": "Invalid selection"
+          }
+        ],
+        "type": "PropertyShape"
+      }
+    ],
+    "type": "NodeShape"
+  }
+]

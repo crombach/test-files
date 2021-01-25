@@ -1,0 +1,40 @@
+[
+  {
+    "id": "c1c68e4fb00b0966812d1cff9ed28c35",
+    "uri": "http://www.factweave.com/mvm/shape#Test2",
+    "label": "Test Two",
+    "created": "2021-01-25T20:02:18.053+0000",
+    "modified": "2021-01-25T20:02:18.053+0000",
+    "targetClass": "Test2",
+    "properties": [
+      {
+        "label": "Pick Two",
+        "path": "pickTwo",
+        "datatype": "xsd:string",
+        "constraints": [
+          {
+            "type": "minCount",
+            "value": 2,
+            "message": "Exactly 2 options must be selected"
+          },
+          {
+            "type": "maxCount",
+            "value": 2,
+            "message": "Exactly 2 options must be selected"
+          },
+          {
+            "type": "in",
+            "value": [
+              "One",
+              "Two",
+              "Three"
+            ],
+            "message": "Invalid selection"
+          }
+        ],
+        "type": "PropertyShape"
+      }
+    ],
+    "type": "NodeShape"
+  }
+]
